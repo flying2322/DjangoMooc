@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>URL反向解析</title>
+</head>
+<body>
+不传参的反向解析<a href="{% url 'url:hello' %}">反向解析</a>
+<hr><br>
+传参的反向解析<a href="{% url 'url:show' '苹果' 'F1'%}">传参的反向解析</a>
+<hr><br>
+识图函数的反向解析<a href="{% url 'url:view' %}">识图函数的反向解析</a>
+<hr><br>
+注册页面:<a href="{% url 'url:register' %}">注册页面</a>
+</body>
+</html>
